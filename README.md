@@ -22,18 +22,18 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="media/screenshots/main-interface.png" alt="Main Interface" width="400"/>
-  <img src="media/screenshots/particle-mode.png" alt="Particle Visualization Mode" width="400"/>
+  <img src="media/screenshots/截屏2025-10-13 上午7.51.08.png" alt="Main Interface" width="400"/>
+
 </div>
 
 <div align="center">
-  <img src="media/screenshots/spectrum-mode.png" alt="Spectrum Analysis Mode" width="400"/>
-  <img src="media/screenshots/equalizer.png" alt="Equalizer Interface" width="400"/>
+
+  <img src="media/screenshots/截屏2025-10-13 上午7.51.17.png" alt="Equalizer Interface" width="400"/>
 </div>
 
-<div align="center">
-  <img src="media/screenshots/waveform-mode.png" alt="Waveform Display Mode" width="400"/>
-  <img src="media/screenshots/mobile-view.png" alt="Mobile Responsive Design" width="400"/>
+
+  <img src="media/screenshots/截屏2025-10-13 上午7.51.31.png" width="400"/>
+
 </div>
 
 > **Note**: Screenshots coming soon! Follow the [Screenshot Guide](media/screenshots/README.md) to capture and upload your own screenshots.
