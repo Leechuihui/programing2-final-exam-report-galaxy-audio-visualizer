@@ -13,11 +13,10 @@
 
 ## 🎥 Demo Video
 
-[![Demo Video](https://img.shields.io/badge/📹-Watch%20Demo-red?style=for-the-badge)](media/demo-videos/)
+[![Demo Video]([https://img.shields.io/badge/📹-Watch%20Demo-red?style=for-the-badge)](media/demo-videos/](https://github.com/Leechuihui/programing2-final-exam-report-galaxy-audio-visualizer/tree/main/media/demo-videos))
 
 *Click to watch the project demonstration video*
 
-> **Note**: Demo video coming soon! Follow the [Video Recording Guide](VIDEO_RECORDING_GUIDE.md) to create and upload your own demo video.
 
 ## 📸 Screenshots
 
