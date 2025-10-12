@@ -319,8 +319,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **GitHub**: [@your-username](https://github.com/your-username)
-- **Email**: your.email@example.com
+
+- **Email**: lizhuhui999@gmail.com
 - **Project Link**: [https://github.com/your-username/galaxy-audio-visualizer](https://github.com/your-username/galaxy-audio-visualizer)
 
 ## ⭐ Show Your Support
