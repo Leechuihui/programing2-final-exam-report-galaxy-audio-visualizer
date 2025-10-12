@@ -9,7 +9,15 @@
 
 ## 🎵 Live Demo
 
-**[🚀 Try it now!](https://your-username.github.io/galaxy-audio-visualizer/)**
+**[🚀 Try it now!](https://leechuihui.github.io/programing2-final-exam-report-galaxy-audio-visualizer/)**
+
+## 🎥 Demo Video
+
+[![Demo Video](https://img.shields.io/badge/📹-Watch%20Demo-red?style=for-the-badge)](media/demo-videos/)
+
+*Click to watch the project demonstration video*
+
+> **Note**: Demo video coming soon! Follow the [Video Recording Guide](VIDEO_RECORDING_GUIDE.md) to create and upload your own demo video.
 
 ## 📸 Screenshots
 
