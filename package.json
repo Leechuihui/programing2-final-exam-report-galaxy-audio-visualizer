@@ -1,0 +1,76 @@
+{
+    "name": "galaxy-audio-visualizer",
+    "version": "1.0.0",
+    "description": "A professional audio visualization player built with modern web technologies, featuring real-time audio analysis, multiple visualization modes, and a stunning cosmic-themed interface.",
+    "main": "index.html",
+    "scripts": {
+        "start": "python -m http.server 8000",
+        "dev": "python -m http.server 8000",
+        "serve": "npx serve .",
+        "scan": "node scan-audio-files.js",
+        "build": "echo 'No build process required for this project'",
+        "test": "echo 'No tests specified'",
+        "lint": "echo 'No linting configured'",
+        "deploy": "gh-pages -d ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/your-username/galaxy-audio-visualizer.git"
+    },
+    "keywords": [
+        "audio",
+        "visualization",
+        "web-audio-api",
+        "p5js",
+        "javascript",
+        "music",
+        "equalizer",
+        "spectrum-analyzer",
+        "particle-system",
+        "web-app",
+        "creative-coding",
+        "interactive",
+        "responsive",
+        "modern-web"
+    ],
+    "author": "Your Name <your.email@example.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/your-username/galaxy-audio-visualizer/issues"
+    },
+    "homepage": "https://your-username.github.io/galaxy-audio-visualizer/",
+    "devDependencies": {
+        "gh-pages": "^4.0.0",
+        "serve": "^14.0.0"
+    },
+    "engines": {
+        "node": ">=14.0.0",
+        "npm": ">=6.0.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead",
+        "not ie 11"
+    ],
+    "files": [
+        "index.html",
+        "sketch.js",
+        "needles.js",
+        "plant.js",
+        "scan-audio-files.js",
+        "audio-files.json",
+        "assets/",
+        "docs/",
+        "README.md",
+        "LICENSE"
+    ],
+    "directories": {
+        "doc": "docs",
+        "test": "tests"
+    },
+    "config": {
+        "port": 8000,
+        "host": "localhost"
+    }
+}

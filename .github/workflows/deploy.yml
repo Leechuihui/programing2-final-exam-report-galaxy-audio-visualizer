@@ -1,0 +1,84 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        # Install any dependencies if package.json exists
+        if [ -f package.json ]; then
+          npm ci
+        fi
+        
+    - name: Generate audio configuration
+      run: |
+        # Generate audio-files.json if scan script exists
+        if [ -f scan-audio-files.js ]; then
+          node scan-audio-files.js
+        fi
+        
+    - name: Validate HTML
+      run: |
+        # Basic HTML validation
+        if [ -f index.html ]; then
+          echo "HTML file exists and is ready for deployment"
+        else
+          echo "Error: index.html not found"
+          exit 1
+        fi
+        
+    - name: Test audio files
+      run: |
+        # Check if audio files exist
+        if [ -d assets ] && [ "$(ls -A assets/*.mp3 2>/dev/null)" ]; then
+          echo "Audio files found:"
+          ls -la assets/*.mp3
+        else
+          echo "Warning: No MP3 files found in assets directory"
+        fi
+        
+    - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        exclude_assets: |
+          .github
+          .git
+          .gitignore
+          README.md
+          CONTRIBUTING.md
+          LICENSE
+          scan-audio-files.js
+          node_modules
+          
+    - name: Create deployment summary
+      run: |
+        echo "## 🚀 Deployment Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "✅ **Status**: Successfully deployed to GitHub Pages" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "📁 **Files deployed**: All project files except development files" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "🔗 **Live URL**: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "📊 **Audio files**: $(ls assets/*.mp3 2>/dev/null | wc -l) MP3 files detected" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "⏰ **Deployed at**: $(date)" >> $GITHUB_STEP_SUMMARY

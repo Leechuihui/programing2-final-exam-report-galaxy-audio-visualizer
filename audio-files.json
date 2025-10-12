@@ -1,0 +1,49 @@
+{
+  "lastUpdated": "2025-08-30T20:08:15.995Z",
+  "totalFiles": 6,
+  "totalSizeMB": "64.28",
+  "files": [
+    {
+      "name": "I Swear.mp3",
+      "path": "assets/I Swear.mp3",
+      "size": 4174725,
+      "sizeMB": "3.98",
+      "modified": "2025-05-08T19:11:14.000Z"
+    },
+    {
+      "name": "Late Night Melancholy - (EA7) CHILL Lofi Piano Beat | Study Session 📚 (1 hour Loop).mp3",
+      "path": "assets/Late Night Melancholy - (EA7) CHILL Lofi Piano Beat | Study Session 📚 (1 hour Loop).mp3",
+      "size": 57845402,
+      "sizeMB": "55.17",
+      "modified": "2025-08-30T19:51:40.576Z"
+    },
+    {
+      "name": "parsRadio_loop.mp3",
+      "path": "assets/parsRadio_loop.mp3",
+      "size": 558440,
+      "sizeMB": "0.53",
+      "modified": "2019-05-01T10:37:21.000Z"
+    },
+    {
+      "name": "segway_loop.mp3",
+      "path": "assets/segway_loop.mp3",
+      "size": 197588,
+      "sizeMB": "0.19",
+      "modified": "2019-05-01T10:39:20.000Z"
+    },
+    {
+      "name": "Wu Ge Ku.mp3",
+      "path": "assets/Wu Ge Ku.mp3",
+      "size": 3675176,
+      "sizeMB": "3.50",
+      "modified": "2025-08-30T19:51:04.567Z"
+    },
+    {
+      "name": "yee-king_track.mp3",
+      "path": "assets/yee-king_track.mp3",
+      "size": 954368,
+      "sizeMB": "0.91",
+      "modified": "2019-05-01T10:42:52.000Z"
+    }
+  ]
+}
