@@ -13,9 +13,17 @@
 
 ## 🎥 Demo Video
 
-[![Demo Video]([https://img.shields.io/badge/📹-Watch%20Demo-red?style=for-the-badge)](media/demo-videos/](https://github.com/Leechuihui/programing2-final-exam-report-galaxy-audio-visualizer/tree/main/media/demo-videos))
+[![Demo Video](https://img.shields.io/badge/📹-Watch%20Demo-red?style=for-the-badge)](media/demo-videos/demo1.mov)
 
 *Click to watch the project demonstration video*
+
+### 🎬 Video Content
+- **Duration**: Short demonstration video
+- **Size**: 9.8MB
+- **Format**: MOV
+- **Content**: Project overview showing solar system visualization, advanced controls, and audio processing features
+
+[📺 **Watch Demo Video**](media/demo-videos/demo1.mov) | [📋 **Video Recording Guide**](VIDEO_RECORDING_GUIDE.md)
 
 
 ## 📸 Screenshots
