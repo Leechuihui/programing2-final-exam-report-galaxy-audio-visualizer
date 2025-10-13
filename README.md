@@ -37,7 +37,7 @@
 
   <img src="media/screenshots/截屏2025-10-13 上午7.51.17.png" alt="Equalizer Interface" width="400"/>
 </div>
-
+<div align="center">
 
   <img src="media/screenshots/截屏2025-10-13 上午7.51.31.png" width="400"/>
 
