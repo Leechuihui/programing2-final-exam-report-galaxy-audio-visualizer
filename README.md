@@ -29,17 +29,17 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="media/screenshots/截屏2025-10-13 上午7.51.08.png" alt="Main Interface" width="400"/>
+  <img src="media/screenshots/截屏2025-10-13 上午7.51.08.png" alt="Main Interface" width="800"/>
 
 </div>
 
 <div align="center">
 
-  <img src="media/screenshots/截屏2025-10-13 上午7.51.17.png" alt="Equalizer Interface" width="400"/>
+  <img src="media/screenshots/截屏2025-10-13 上午7.51.17.png" alt="Equalizer Interface" width="800"/>
 </div>
 <div align="center">
 
-  <img src="media/screenshots/截屏2025-10-13 上午7.51.31.png" width="400"/>
+  <img src="media/screenshots/截屏2025-10-13 上午7.51.31.png" width="800"/>
 
 </div>
 
