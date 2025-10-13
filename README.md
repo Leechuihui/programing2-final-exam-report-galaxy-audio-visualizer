@@ -13,9 +13,27 @@
 
 ## 🎥 Demo Video
 
-[![Demo Video](https://img.shields.io/badge/📹-Watch%20Demo-red?style=for-the-badge)](media/demo-videos/demo1.mov)
+<div align="center">
 
-*Click to watch the project demonstration video*
+### 🎬 Watch the Demo Video
+
+[![Demo Video](media/thumbnails/video-thumbnail.png)](media/demo-videos/demo1.mov)
+
+**⬇️ Click the image above to watch the demonstration ⬆️**
+
+---
+
+### 📺 Quick Access Links
+
+| 🎯 Action | 🔗 Link |
+|-----------|---------|
+| **📹 Watch Video** | [media/demo-videos/demo1.mov](media/demo-videos/demo1.mov) |
+| **📁 Video Directory** | [media/demo-videos/](media/demo-videos/) |
+| **📖 Viewing Guide** | [WATCH_VIDEO_GUIDE.md](WATCH_VIDEO_GUIDE.md) |
+
+</div>
+
+*Watch the Galaxy Audio Visualizer Player in action*
 
 ### 🎬 Video Content
 - **Duration**: Short demonstration video
@@ -23,7 +41,10 @@
 - **Format**: MOV
 - **Content**: Project overview showing solar system visualization, advanced controls, and audio processing features
 
-[📺 **Watch Demo Video**](media/demo-videos/demo1.mov) | [📋 **Video Recording Guide**](VIDEO_RECORDING_GUIDE.md)
+### 📺 Alternative Viewing Options
+- [📺 **Direct Video Link**](media/demo-videos/demo1.mov) - Open in new tab
+- [📋 **Video Recording Guide**](VIDEO_RECORDING_GUIDE.md) - Learn how to create your own demo
+- [📖 **Watching Guide**](WATCH_VIDEO_GUIDE.md) - Detailed viewing instructions
 
 
 ## 📸 Screenshots
