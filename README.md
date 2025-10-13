@@ -17,7 +17,7 @@
 
 ### 🎬 Watch the Demo Video
 
-[![Demo Video](media/thumbnails/video-thumbnail.png)](media/demo-videos/demo1.mov)
+[![Demo Video](media/thumbnails/video-thumbnail.png)](https://github.com/user-attachments/assets/d1085ca0-4b17-4271-8a93-dbb14d3464cc)
 
 **⬇️ Click the image above to watch the demonstration ⬆️**
 
@@ -27,7 +27,8 @@
 
 | 🎯 Action | 🔗 Link |
 |-----------|---------|
-| **📹 Watch Video** | [media/demo-videos/demo1.mov](media/demo-videos/demo1.mov) |
+| **📹 Watch Video (GitHub)** | [GitHub Video Link](https://github.com/user-attachments/assets/d1085ca0-4b17-4271-8a93-dbb14d3464cc) |
+| **📹 Local Video** | [media/demo-videos/demo1.mov](media/demo-videos/demo1.mov) |
 | **📁 Video Directory** | [media/demo-videos/](media/demo-videos/) |
 | **📖 Viewing Guide** | [WATCH_VIDEO_GUIDE.md](WATCH_VIDEO_GUIDE.md) |
 
@@ -37,12 +38,13 @@
 
 ### 🎬 Video Content
 - **Duration**: Short demonstration video
-- **Size**: 9.8MB
-- **Format**: MOV
+- **Size**: 9.8MB (local) / GitHub hosted
+- **Format**: MOV / MP4 (GitHub optimized)
 - **Content**: Project overview showing solar system visualization, advanced controls, and audio processing features
 
 ### 📺 Alternative Viewing Options
-- [📺 **Direct Video Link**](media/demo-videos/demo1.mov) - Open in new tab
+- [📺 **GitHub Video Link**](https://github.com/user-attachments/assets/d1085ca0-4b17-4271-8a93-dbb14d3464cc) - **Primary video (recommended)**
+- [📺 **Local Video File**](media/demo-videos/demo1.mov) - Download and play locally
 - [📋 **Video Recording Guide**](VIDEO_RECORDING_GUIDE.md) - Learn how to create your own demo
 - [📖 **Watching Guide**](WATCH_VIDEO_GUIDE.md) - Detailed viewing instructions
 
