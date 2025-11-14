@@ -1189,6 +1189,20 @@ function setupNavigationAutoHide() {
     console.log('Bottom navigation bar auto-hide feature setup completed');
 }
 
+// 移动端音频上下文启动辅助函数
+async function resumeAudioContext() {
+    try {
+        // 获取 p5.js 的音频上下文
+        const audioContext = getAudioContext();
+        if (audioContext && audioContext.state !== 'running') {
+            await audioContext.resume();
+            console.log('✅ Audio context resumed for mobile device');
+        }
+    } catch (error) {
+        console.warn('⚠️ Failed to resume audio context:', error);
+    }
+}
+
 function togglePlay() {
     if (!isReady) return;
 
@@ -1197,9 +1211,17 @@ function togglePlay() {
         isPlaying = false;
         document.getElementById('playBtn').textContent = '▶';
     } else {
-        sample.play();
-        isPlaying = true;
-        document.getElementById('playBtn').textContent = '⏸';
+        // 移动端：确保音频上下文已启动
+        resumeAudioContext().then(() => {
+            sample.play();
+            isPlaying = true;
+            document.getElementById('playBtn').textContent = '⏸';
+        }).catch(() => {
+            // 即使恢复失败也尝试播放
+            sample.play();
+            isPlaying = true;
+            document.getElementById('playBtn').textContent = '⏸';
+        });
     }
 }
 

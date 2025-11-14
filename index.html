@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="Galaxy Audio Visualizer Player - A professional audio visualization player with real-time audio analysis and stunning cosmic-themed interface">
+  <meta name="keywords" content="audio visualizer, music player, p5.js, web audio, visualization">
+  <meta name="author" content="Galaxy Audio Visualizer">
+  <meta name="theme-color" content="#667eea">
+  
+  <!-- Mobile Web App Capabilities -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Audio Visualizer">
+  
+  <!-- Prevent iOS Safari from auto-detecting phone numbers -->
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Galaxy Audio Visualizer Player">
+  <meta property="og:description" content="A professional audio visualization player with real-time audio analysis">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Galaxy Audio Visualizer Player">
+  <meta name="twitter:description" content="A professional audio visualization player with real-time audio analysis">
+  
   <title>Audio Visualizer Player</title>
   <script src="p5.min.js"></script>
   <script src="p5.sound.min.js"></script>
@@ -2193,6 +2219,52 @@
   <script src="needles.js"></script>
   <script src="sketch.js"></script>
   <script>
+    // 移动端音频上下文启动 - 必须在用户交互时启动
+    (function() {
+      let audioContextStarted = false;
+      
+      function startAudioContext() {
+        if (audioContextStarted) return;
+        
+        try {
+          // 等待 p5.js 加载完成
+          if (typeof getAudioContext === 'function') {
+            const audioContext = getAudioContext();
+            if (audioContext && audioContext.state !== 'running') {
+              audioContext.resume().then(() => {
+                console.log('✅ Mobile audio context started');
+                audioContextStarted = true;
+              }).catch(err => {
+                console.warn('⚠️ Audio context resume failed:', err);
+              });
+            } else if (audioContext && audioContext.state === 'running') {
+              audioContextStarted = true;
+            }
+          }
+        } catch (error) {
+          console.warn('⚠️ Failed to start audio context:', error);
+        }
+      }
+      
+      // 监听各种用户交互事件
+      const events = ['touchstart', 'touchend', 'mousedown', 'click'];
+      events.forEach(eventType => {
+        document.addEventListener(eventType, startAudioContext, { once: true, passive: true });
+      });
+      
+      // 也监听 canvas 上的交互
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const canvas = document.querySelector('canvas');
+          if (canvas) {
+            events.forEach(eventType => {
+              canvas.addEventListener(eventType, startAudioContext, { once: true, passive: true });
+            });
+          }
+        }, 1000);
+      });
+    })();
+    
     // Bottom navigation bar doesn't need drag functionality
     console.log('Player bar set to bottom navigation mode');
 
