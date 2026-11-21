@@ -1,3 +1,5 @@
+**English** | [简体中文](README.zh-CN.md)
+
 # 🌌 Galaxy Audio Visualizer Player
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -105,8 +107,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/galaxy-audio-visualizer.git
-   cd galaxy-audio-visualizer
+   git clone https://github.com/Leechuihui/programing2-final-exam-report-galaxy-audio-visualizer.git
+   cd programing2-final-exam-report-galaxy-audio-visualizer
    ```
 
 2. **Add your audio files**
@@ -124,10 +126,10 @@
    ```bash
    # Using Python
    python -m http.server 8000
-   
+
    # Using Node.js
    npx serve .
-   
+
    # Using PHP
    php -S localhost:8000
    ```
@@ -323,7 +325,7 @@ node scan-audio-files.js
 - Check system resources
 
 ### Getting Help
-- Check the [Issues](https://github.com/your-username/galaxy-audio-visualizer/issues) page
+- Check the [Issues](https://github.com/Leechuihui/programing2-final-exam-report-galaxy-audio-visualizer/issues) page
 - Create a new issue with detailed information
 - Include browser version and error messages
 
@@ -358,7 +360,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 - **Email**: lizhuhui999@gmail.com
-- **Project Link**: [https://github.com/your-username/galaxy-audio-visualizer](https://github.com/your-username/galaxy-audio-visualizer)
+- **Project Link**: [https://github.com/Leechuihui/programing2-final-exam-report-galaxy-audio-visualizer](https://github.com/Leechuihui/programing2-final-exam-report-galaxy-audio-visualizer)
 
 ## ⭐ Show Your Support
 
@@ -370,4 +372,3 @@ Give a ⭐️ if this project helped you!
   <p>Made with ❤️ and lots of ☕</p>
   <p>© 2025 Galaxy Audio Visualizer Player</p>
 </div>
-# programing2-final-exam-report-galaxy-audio-visualizer
